@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #697C8A;
+  font-family: Arial, sans-serif;
+}
+#calcu{
+  background-color: ghostwhite;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+#display {
+  background-color: #EAF4F4; /* Light green display */
+  border-radius: 10px;
+  height: 60px;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+button {
+  background-color: #F0F3F4; /* Light button background */
+  border: none;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.equals {
+  background-color: #2E3138; /* Pink button background */
+  color: white;
+  grid-column: span 2; /* Span two columns for the equals button */
+  border-radius: 30px;
+}
+.operator{
+  background-color: #5A636A;
+  color: whitesmoke;
+}
+.spclbtn{
+  background-color: #697C8A;
+  color: whitesmoke;
+}
